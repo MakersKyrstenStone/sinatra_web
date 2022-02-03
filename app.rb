@@ -10,5 +10,6 @@ get '/secret' do
 end
 
 get '/cat' do
- erb(:index)
+  @name_list = ["Me", "Myself", "I"].sample
+  erb(:index)
 end
